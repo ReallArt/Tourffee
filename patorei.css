@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background: #f7edd17a;
+    backdrop-filter: opacity (50%);
+}
+
+header {
+    position: static;
+    top: 0;
+    width: 100%;
+    background: #3A1C06;
+    color: #000000;
+    z-index: 1000;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.home img {
+    width: 100px;
+    height: auto;
+    align-items: left;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    padding: 20px;
+}
+
+
+nav a {
+    color: #F7EDD1;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    background: #F7EDD1;
+    color: #000000;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-top: 30px;
+    height: auto;
+
+}
+
+footer a {
+    color: #000;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+
+}
+
+/*-----------------------Resto do Site----------------------------------*/
+
+.patoR {
+    color: #000000;
+    text-align: center;
+    font-family: "clicker-compressed", sans-serif;
+    font-size: 50px;
+    margin: 3% 0;
+    align-items: center;
+
+}
+
+.logoPato img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+/* -------------------carousel-------------------- */
+
+.container {
+    position: relative;
+}
+
+.container .wrapper {
+    width: 40vw;
+    height: 65vh;
+    margin: 5rem auto;
+    box-shadow: 10px 10px 10px #00000071;
+    overflow: hidden;
+    background-color: #f7edd163;
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+
+.container #slider-img-1 {
+    background-image: url(https://fastly.4sqi.net/img/general/width960/20228565_89I_aEou2joq4hey3BXUn9Do1o4b1gEV-rDtS-Kvs90.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container #slider-img-2 {
+    background-image: url(https://fastly.4sqi.net/img/general/width960/5309968_zbNRzGcsQ7zMlZsKeXCaERUp4eLa2jnpnfsYg1jPOKk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container #slider-img-3 {
+    background-image: url(https://fastly.4sqi.net/img/general/width960/5309968_yeMwd-DIX7Hs6jfhPaBdMdO3YdDL_EkNqI1S8Bo0r0c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container #slider-img-4 {
+    background-image: url(https://fastly.4sqi.net/img/general/width960/5309968_eNBYyrH6vAJ0PQIJOHmNy97k_w735dQA7DxENNpFVVg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* .container .button-holder .button {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 8%;
+} */
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-200%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    90% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #000000;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+
+    align-items: center;
+}
+
+.horario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: justify;
+}
+
+.endereco {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cubo {
+    background-color: #d8c6aa0c;
+    border-radius: 15%;
+    align-items: center;
+    width: 900px;
+    height: 450px;
+    font-size: 26px;
+}
+
+.texto {
+    display: flex;
+    color: #000000;
+    text-align:start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    /* margin: 2.5rem auto; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.coluna{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0% 5%;
+}
+.textos{
+    margin-left: 8%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .logo img {
+      width: 300px;
+    }
+  
+    .home img {
+      width: 80px;
+    }
+  
+    nav {
+      gap: 60px;
+      padding: 15px;
+    }
+  
+    .container .wrapper {
+      width: 70vw;
+      height: 55vh;
+    }
+  
+    .cubo {
+      width: 90%;
+      height: auto;
+      font-size: 22px;
+    }
+  
+    .texto {
+      font-size: 22px;
+    }
+  }
+  
+  /* Celulares */
+  @media (max-width: 768px) {
+    header {
+      gap: 10px;
+      text-align: center;
+    }
+  
+    nav {
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .logo img {
+      width: 200px;
+    }
+  
+    .home img {
+      width: 60px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  
+    .patoR {
+      font-size: 36px;
+    }
+  
+    .logoPato img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .container .wrapper {
+      width: 90vw;
+      height: 40vh;
+    }
+  
+    .coluna {
+      grid-template-columns: 1fr;
+      margin: 0 10px;
+    }
+  
+    .cubo {
+      width: 95%;
+      font-size: 18px;
+      height: auto;
+    }
+  
+    .texto {
+      font-size: 18px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    footer a {
+      font-size: 16px;
+    }
+  }
